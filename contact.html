@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KK Restaurants - Contact Us</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background:linear-gradient(gold,white);
+            color: black;
+            text-align: center;
+            padding: 0.1em;
+        }
+
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover{
+            color:gold;
+        }
+
+        section {
+            padding: 20px;
+            background:url(home.jpg);
+            background-size: cover;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        .contact-container {
+            width: 80%;
+            margin: 20px auto;
+            background:linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            color:white;
+        }
+
+        .contact-form {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        .contact-form button {
+            background-color:black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: gold;
+        }
+
+        .logo {
+            display: block;
+            margin-top:5px;
+            margin-left:5px;
+            max-width: 70px;
+            float:left;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="KK Restaurants Logo" class="logo">
+        <h1>KK Restaurants</h1>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section>
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p>Have questions or feedback? Reach out to us!</p>
+
+            <div class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 KK Restaurants. All rights reserved.
+    </footer>
+
+</body>
+</html>
